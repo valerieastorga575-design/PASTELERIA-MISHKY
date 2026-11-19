@@ -440,3 +440,4 @@ async function iniciar() {
 }
 
 iniciar();
+window.__MISHKY_CAT__ = { obtenerProductos: () => productos, formatoSoles: soles };
