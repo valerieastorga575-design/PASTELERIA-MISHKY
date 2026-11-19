@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300" role="img" aria-label="Termómetro digital">
+  <rect width="300" height="300" fill="#F5F6F9"/>
+  <ellipse cx="150" cy="262" rx="95" ry="12" fill="#2B2D42" opacity=".12"/>
+  <g transform="rotate(-35 150 150)">
+    <rect x="75" y="125" width="170" height="50" rx="25" fill="#FFFFFF"/>
+    <rect x="35" y="140" width="60" height="20" rx="10" fill="#B0BEC5"/>
+    <rect x="125" y="133" width="80" height="34" rx="6" fill="#2B2D42"/>
+    <text x="165" y="157" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#7CFFCB">36.5°</text>
+    <circle cx="225" cy="150" r="8" fill="#FA6F1C"/>
+  </g>
+</svg>

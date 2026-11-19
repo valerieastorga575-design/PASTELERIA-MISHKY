@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300" role="img" aria-label="Caja de paracetamol">
+  <rect width="300" height="300" fill="#F5F6F9"/>
+  <ellipse cx="150" cy="262" rx="95" ry="12" fill="#2B2D42" opacity=".12"/>
+  <rect x="70" y="80" width="160" height="175" rx="10" fill="#FFFFFF"/>
+  <path d="M230 80 l25 -18 v175 l-25 18z" fill="#E1E7EC"/><path d="M70 80 l25 -18 h160 l-25 18z" fill="#F4F7F9"/>
+  <rect x="70" y="80" width="160" height="40" fill="#8A45D0"/>
+  <text x="150" y="107" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">PARACETAMOL</text>
+  <text x="150" y="160" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="34" font-weight="700" fill="#2B2D42">500 mg</text>
+  <text x="150" y="190" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="15" fill="#2B2D42">100 tabletas</text>
+  <circle cx="100" cy="225" r="11" fill="#F5F6F9"/><circle cx="128" cy="225" r="11" fill="#F5F6F9"/><circle cx="156" cy="225" r="11" fill="#F5F6F9"/>
+</svg>
