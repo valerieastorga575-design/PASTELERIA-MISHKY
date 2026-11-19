@@ -27,6 +27,11 @@
         <ul class="menu">
           <li><a href="#catalogo" aria-current="page">Catálogo</a></li>
           <li><a href="#contacto">Contacto</a></li>
+          <li>
+            <button type="button" id="btn-abrir-pedido" class="btn-pedido-nav">
+              Pedido (<span id="contador-pedido">0</span>)
+            </button>
+          </li>
         </ul>
       </nav>
     </div>
@@ -67,6 +72,26 @@
     <ul id="grilla" class="grilla" aria-busy="true"></ul>
   </main>
 
+  <aside id="panel-pedido" class="panel-pedido" aria-label="Resumen de pedido" hidden>
+    <div class="panel-pedido__cabecera">
+      <h2>Tu pedido en Mishky</h2>
+      <button type="button" id="btn-cerrar-pedido" aria-label="Cerrar panel de pedido">✕</button>
+    </div>
+    <ul id="lista-pedido" class="lista-pedido"></ul>
+    <p id="pedido-vacio" class="pedido-vacio">Aún no agregaste postres a tu pedido.</p>
+    <div class="panel-pedido__pie">
+      <div class="panel-pedido__total">
+        <span>Total estimado:</span>
+        <strong id="total-pedido">S/ 0.00</strong>
+      </div>
+      <div class="panel-pedido__acciones">
+        <button type="button" id="btn-vaciar-pedido" class="btn-secundario">Vaciar</button>
+        <button type="button" id="btn-copiar-pedido" class="btn-principal">Copiar resumen</button>
+      </div>
+      <p id="mensaje-copiado" class="mensaje-copiado" role="status" aria-live="polite"></p>
+    </div>
+  </aside>
+
   <footer id="contacto" class="pie">
     <div class="contenedor">
       <strong>Pastelería Mishky</strong>
@@ -90,6 +115,7 @@
           <span class="tarjeta__precio"></span>
           <span class="tarjeta__porciones"></span>
         </div>
+        <button type="button" class="tarjeta__agregar">Agregar al pedido</button>
       </div>
     </li>
   </template>
@@ -105,10 +131,14 @@
         <span id="detalle-precio" class="detalle__precio"></span>
         <span id="detalle-stock"></span>
       </div>
-      <button type="button" class="detalle__cerrar" data-cerrar>Cerrar</button>
+      <div class="detalle__botones">
+        <button type="button" id="detalle-agregar" class="btn-principal">Agregar al pedido</button>
+        <button type="button" class="detalle__cerrar" data-cerrar>Cerrar</button>
+      </div>
     </div>
   </dialog>
 
   <script src="js/catalogo.js" defer></script>
+  <script src="js/pedido.js" defer></script>
 </body>
 </html>
